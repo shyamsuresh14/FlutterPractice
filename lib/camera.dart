@@ -44,7 +44,7 @@ class _CameraWidgetState extends State<CameraWidget>{
   void initState(){
     super.initState();
     getCameras();
-    loadModel();
+    //loadModel();
     controller = CameraController(cameras[0], ResolutionPreset.medium);
     controller.initialize().then((_) {
       if(!mounted){
